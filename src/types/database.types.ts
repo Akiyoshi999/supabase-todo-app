@@ -34,26 +34,26 @@ export type Database = {
   }
   public: {
     Tables: {
-      users: {
+      todos: {
         Row: {
           created_at: string | null
-          email: string
           id: string
-          password: string
+          is_complete: boolean
+          title: string
           updated_at: string | null
         }
         Insert: {
           created_at?: string | null
-          email: string
           id?: string
-          password: string
+          is_complete?: boolean
+          title: string
           updated_at?: string | null
         }
         Update: {
           created_at?: string | null
-          email?: string
           id?: string
-          password?: string
+          is_complete?: boolean
+          title?: string
           updated_at?: string | null
         }
         Relationships: []
